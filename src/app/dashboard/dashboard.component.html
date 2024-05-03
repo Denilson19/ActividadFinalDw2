@@ -1,14 +1,17 @@
-<p>dashboard works!</p>
+<p>Equipos con mas Barra brava!</p>
 <nav>
-    <a routerLink="/heroes">Heroes</a>
+    <a routerLink="/heroes">Todos los equipos</a>
   </nav>
-  <h2>Top Heroes</h2>
+  <h2>Seleciona una Opcion</h2>
 <div class="heroes-menu">
   <a *ngFor="let hero of heroes"
     routerLink="/detail/{{hero.id}}">
     {{hero.name}}
   </a>
 </div>
+<head>
+  <link rel="stylesheet" type="text/css" href="dashboard.component.css">
+  </head>
   <router-outlet></router-outlet>
 
   

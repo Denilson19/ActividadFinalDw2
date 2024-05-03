@@ -48,3 +48,11 @@ h2 {
   a:hover {
     background-color: #000;
   }
+  p {
+    background-color: white;
+    border: rgb(247, 242, 242) 1px solid;
+    position: relative;
+    left: 825px;
+    top: 20px;
+  }
+  

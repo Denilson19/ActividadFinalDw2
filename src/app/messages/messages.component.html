@@ -1,9 +1,9 @@
-<p>messages works!</p>
+<p>Historial</p>
 <div *ngIf="messageService.messages.length">
 
-    <h2>Messages</h2>
+    <h2>seleccionados Recientemente</h2>
     <button type="button" class="clear"
-            (click)="messageService.clear()">Clear messages</button>
+            (click)="messageService.clear()">Eliminar Historial</button>
     <div *ngFor='let message of messageService.messages'> {{message}} </div>
   
   </div>
