@@ -1,30 +1,36 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+// Importa NgModule desde @angular/core para definir un módulo
+import { NgModule } from '@angular/core'; 
+// Importa BrowserModule desde @angular/platform-browser para la compatibilidad del navegador
+import { BrowserModule } from '@angular/platform-browser'; 
+import { FormsModule } from '@angular/forms'; // Importa FormsModule desde @angular/forms para habilitar el enlace de datos bidireccional
 
-import { AppComponent } from './app.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
-import { HeroDetailComponent } from './hero-detail/hero-detail.component';
-import { HeroesComponent } from './heroes/heroes.component';
-import { MessagesComponent } from './messages/messages.component';
-
-import { AppRoutingModule } from './app-routing.module';
-import { HttpClientModule } from '@angular/common/http';
+import { AppComponent } from './app.component'; // Importa AppComponent desde app.component.ts
+import { DashboardComponent } from './dashboard/dashboard.component'; // Importa DashboardComponent desde dashboard.component.ts
+import { HeroDetailComponent } from './hero-detail/hero-detail.component'; 
+import { HeroesComponent } from './heroes/heroes.component'; 
+import { MessagesComponent } from './messages/messages.component'; 
+// Importa AppRoutingModule desde app-routing.module.ts para la configuración de enrutamiento
+import { AppRoutingModule } from './app-routing.module'; 
+import { HttpClientModule } from '@angular/common/http'; 
 
 @NgModule({
   imports: [
-    BrowserModule,
-    FormsModule,
-    HttpClientModule,
-    AppRoutingModule
+    BrowserModule, // Importa BrowserModule para el soporte del navegador
+    FormsModule, // Importa FormsModule para el enlace de datos bidireccional
+    HttpClientModule, 
+    AppRoutingModule 
   ],
+
   declarations: [
-    AppComponent,
-    DashboardComponent,
-    HeroesComponent,
-    HeroDetailComponent,
-    MessagesComponent
+    // Declara AppComponent
+    AppComponent, 
+    DashboardComponent, // Declara DashboardComponent
+    HeroesComponent, 
+    HeroDetailComponent, 
+    MessagesComponent 
   ],
-  bootstrap: [ AppComponent ]
+  bootstrap: [ AppComponent ] // Define AppComponent como el componente raíz
 })
-export class AppModule { }
+// Define AppModule como el módulo principal de la aplicación
+export class AppModule { } 
+

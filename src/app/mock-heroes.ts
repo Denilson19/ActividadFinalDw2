@@ -1,5 +1,7 @@
+// Importa la interfaz Hero desde hero.ts
 import { Hero } from './hero';
 
+// Exporta un arreglo de objetos Hero
 export const HEROES: Hero[] = [
   { id: 11, name: 'Real mamore' },
   { id: 12, name: 'Oriente' },
